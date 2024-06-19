@@ -1,0 +1,7 @@
+Functions are the heart of the JS.
+
+when a js program is run an execution context is created.
+
+in that whenever the new function call is there again new execution context is created for that function and similar for every function is created whenever new function is called.
+
+during every function execution js engine will look for variable first inside function body, that is, inside the variable environment of the function. if variable not found in that function then it will look for it in the upper scope.
