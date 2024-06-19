@@ -1,0 +1,10 @@
+HOISTING IN JAVASCCRIPT
+
+All variables and functions are allocated some memory even before start of the execution phase that is, in the memory creation phase. functions with function declaration are stored as they are that is whole function body but variables are stored with value undefined till they are assigned any value.
+
+but variables declared using var can be accessed before they are assigned any value in the execution phase and they are assigned value undefined as states above. so if we try to access variables before initialize then with any value then they will give us "undefined" which is the value assigned to them in the memory creation phase of the execution context.
+
+above phenomenon is called hoisting in javascript.
+but it we don't declared variable and try to access it without declaration then it will thro the error -"variableName is not defined"
+
+let & const : variables declared with let and const are also hois
