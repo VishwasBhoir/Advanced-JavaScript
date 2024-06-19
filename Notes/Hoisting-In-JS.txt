@@ -7,4 +7,5 @@ but variables declared using var can be accessed before they are assigned any va
 above phenomenon is called hoisting in javascript.
 but it we don't declared variable and try to access it without declaration then it will thro the error -"variableName is not defined"
 
-let & const : variables declared with let and const are also hois
+let & const : variables declared with let and const are also hoisted but they are not available to use till they are not initialize.
+Temporal Dead Zone: the area of the code where let and const not accessible. that is till they are not initialize is called temporal dead zone.
