@@ -1,0 +1,11 @@
+CALL STACK:
+
+Call stack in browser in js is used to maintain order of the execution of the execution context.
+
+that is, call stack maintains the order of the execution of the call stack.
+
+Execution context: whenever any JavaScript code is executed an execution context is created, which is global execution context. in this context the memory for variables and function gets allocated and functions defined with keyword function that is function definitions are got stored entirely as they are.
+
+now when this execution context is created it is put on the call stack and whenever, in execution phase of the execution context, new function is called the new execution context for that function is created and it put on the global execution context. now this new function gets executed first and after returning from this function, control is passed again to global execution context.
+
+if suppose there is another function call inside the new function which is on top of the global execution function then again new execution context will be created and it will be on top of old function in which it was called and after finishing this function call stack deletes that new function from call stack and control is passed to the older function.
