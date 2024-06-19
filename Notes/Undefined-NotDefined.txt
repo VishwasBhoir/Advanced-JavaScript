@@ -1,0 +1,8 @@
+what diff between undefined and not defined?
+  - UNDEFINED is the the value assigned to the variables in memory creation phase of the execution context. it indicates that variable is declared but not assigned any value yet.
+  - NOT DEFINED is when we never declared or defined any variable and trying to access it will give the error that 'variable is not defined'. it means we have never defined any variable with this name.
+
+what is loosely typed programming language?
+  - loosely typed, weakly typed and dynamic language, these are the same terms used for JavaScript. It means that while declaring the variables we don't have to consider the data type of the variable. That things are automatically handled behind the scenes.
+
+* You should not initialize variables with "undefined" it automatically gets that value need not to define manually. its bad programming practice in js. as it is meant for purpose to indicate that variable is declared but not initialized.
