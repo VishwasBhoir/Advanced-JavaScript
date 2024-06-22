@@ -1,0 +1,5 @@
+  SCOPE :
+
+    Scope is area of program in which we can access the specific variable or function.
+
+    scope is directly depend on the lexical environment.

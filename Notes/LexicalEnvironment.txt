@@ -1,0 +1,10 @@
+* Scope in JavaScript is directly related to lexical environment.
+
+LEXICAL ENVIRONMANE:
+  * Lexical environment is local memory along with lexical environment of its lexical parent.
+    - lexical parent means where that particular function present. if it present inside function "parent()" the lexical parent is function "parent()".
+  * The term lexical means in hierarchy or in sequence.
+
+  - Whenever a execution environment is created, lexical environment is also created.
+
+  * SCOPE CHAIN - Scope chain is the chain of all lexical environments and there parents references.

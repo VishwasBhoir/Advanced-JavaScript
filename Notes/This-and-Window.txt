@@ -1,0 +1,9 @@
+WINDOW OBJECT IN JS:
+  - Window is a global object which is created along with the execution context.
+  - Window object is created by js engine into the global space which contains properties and methods which we can use anywhere in our program.
+  - like this window js engine also create a "this" keyword which points to this window object at the global level.
+  - whenever we declare variables and functions in the global space they got attached to this global space which is the window object.
+
+
+GLOBAL SPACE OR GLOBAL SCOPE:
+  - Any code which is not inside any function is in the global space.
