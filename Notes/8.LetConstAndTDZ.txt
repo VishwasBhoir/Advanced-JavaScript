@@ -1,0 +1,42 @@
+TOPICS COVERED:
+  Let,
+  const,
+  TDZ,
+  Diff between
+    SyntaxError,
+    ReferenceError
+    TypeError
+
+
+* Let and const declaration are HOISTED. but they are hoisted differently.
+
+* In the memory creation phase of the execution context, in case of 'var' variables they are allocated memory and attached to global object i.e window object, but in case of variables declared with 'let' they are also allocated memory but they are not stored in global object they are stored in different memory space. and we can not access them before putting some value in them.
+
+TEMPORAL DEAD ZONE (TDZ):
+  - it is time or part of code since the let and const variables were hoisted till they are assigned the values.
+  - that is the moment they are hosted and the moment they assigned some value, the time between these two moments is known as TDZ.
+  - so when we assign the value to the variables declared with let and const the TDZ ends at that point for that particular variable.
+
+
+TYPES OF ERRORS:
+    1. ReferenceError:
+       when there is not any value defined in scope it is known as ReferenceError.
+      e.g.
+          1.'variable' is not defined.
+          2. you cannot access 'variable_name' before initialization.
+
+
+    2. SyntaxError:
+       - we cannot redeclare let variables. it will show syntax error with messege that - "Identifier 'variable_name' has already been declared".
+       - means in case of let, we cannot redeclare same variable in the same scope again. (It is allowed in case of var).
+
+      e.g
+        - in case of const there is the error with messege ' Missing initializer in const' is a syntax error. which indicates that we have to declare and initialize const variables on the same line.
+        - Identifier 'variable_name' has already been declared.
+
+
+    3. TypeError:
+        if we try to assign value to the const again. it will show the type error. that is variables with const cannot reassigned any value to them.
+
+      e.g
+        -assignment to constant variable.
