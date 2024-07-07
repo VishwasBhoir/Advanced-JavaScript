@@ -1,0 +1,11 @@
+BLOCK:
+      - Block is also known as compound statement.
+      - Block is used to combine multiple JS statements into a group.
+      - We need to group multiple statements so that we can use it in a place where JS expects single statement.
+          JS accepts one statement in 'if' but if we want to add more we use block.
+          e.g : 1.  if(true) statement1; can be written if statement1 is not single statement.
+                2.  if(true) {
+                      group of statements
+                    }
+      - Let and Const are block scoped because they are hoisted in separate memory space which is reserved for a the block in which they are declared.
+      - on the other hand variables declared with var inside the same block are hoisted inside global scope.
