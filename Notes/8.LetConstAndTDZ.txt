@@ -7,8 +7,20 @@ TOPICS COVERED:
     ReferenceError
     TypeError
 
+* LEXICAL ENVIRONMENT:
+      local memory along with lexical environment of its parent.
+      It is created whenever execution context is created.
 
 * Let and const declaration are HOISTED. but they are hoisted differently.
+  LET:
+  =>  We can not redeclare let variables.
+        That means following statements are not valid in case of let. its allowed in case of var.
+        i.e let a = 10;
+            let a = 100;
+            var a = 20; => is also not allowed as a has already declared with let.
+  CONST:
+  =>  const variables should be declared and assigned in the same line.
+      if not it will through error.
 
 * In the memory creation phase of the execution context, in case of 'var' variables they are allocated memory and attached to global object i.e window object, but in case of variables declared with 'let' they are also allocated memory but they are not stored in global object they are stored in different memory space. and we can not access them before putting some value in them.
 
@@ -27,11 +39,11 @@ TYPES OF ERRORS:
 
 
     2. SyntaxError:
-       - we cannot redeclare let variables. it will show syntax error with messege that - "Identifier 'variable_name' has already been declared".
+       - we cannot redeclare let variables. it will show syntax error with message that - "Identifier 'variable_name' has already been declared".
        - means in case of let, we cannot redeclare same variable in the same scope again. (It is allowed in case of var).
 
       e.g
-        - in case of const there is the error with messege ' Missing initializer in const' is a syntax error. which indicates that we have to declare and initialize const variables on the same line.
+        - in case of const there is the error with message ' Missing initializer in const' is a syntax error. which indicates that we have to declare and initialize const variables on the same line.
         - Identifier 'variable_name' has already been declared.
 
 
